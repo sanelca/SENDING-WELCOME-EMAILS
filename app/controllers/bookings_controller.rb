@@ -38,5 +38,4 @@ class BookingsController < ApplicationController
     def booking_params
       params.require(:booking).permit(:flight_id, passengers_attributes: [:id, :name, :email, :booking_id])
     end
-
 end
