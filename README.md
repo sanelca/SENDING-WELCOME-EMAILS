@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A ruby project designed to demonstrate how to send emails using ruby on rails 
 
-Things you may want to cover:
+### Steps
+1. Clone repo ``git clone  https://github.com/sanelca/SENDING-WELCOME-EMAILS.git``
 
-* Ruby version
+2. Run bundle `bundle `
 
-* System dependencies
+3. Run migrations `rails db:create && rails db:migrate`
 
-* Configuration
+4. Seed database `rails db:seed`
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
