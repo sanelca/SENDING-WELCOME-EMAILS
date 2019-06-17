@@ -26,9 +26,17 @@ class BookingsController < ApplicationController
     end
   end
 
-  private
-  def booking_params
-    params.require(:booking).permit(:flight_id, passengers_attributes: [:id, :name, :email, :booking_id])
+  def index
+    @bookings = Booking.all
   end
+
+  def show
+    @booking = Booking.find(params[:id])
+  end
+
+  private
+    def booking_params
+      params.require(:booking).permit(:flight_id, passengers_attributes: [:id, :name, :email, :booking_id])
+    end
 
 end
